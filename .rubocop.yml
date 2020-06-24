@@ -1,4 +1,9 @@
 inherit_from: .rubocop_todo.yml
 
+AllCops:
+  Exclude:
+    - 'db/migrate/20200624152635_add_foreign_key_constraint_to_active_storage_attachments_for_blob_id.active_storage.rb'
+    - node_modules/**/*
+
 Style/Documentation:
   Enabled: false
