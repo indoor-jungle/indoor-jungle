@@ -29,7 +29,8 @@ bundle exec rubocop  # Lint Ruby code
 ```
 
 ## Environment
-[Heroku](http://heroku.com/) service is being used to host the application. `main` and `staging` branches are automatically deployed to relative urls:
+[Heroku](http://heroku.com/) is being used to host the application. 
+`main` and `staging` branches are automatically deployed to relative urls:
 - [Production](https://indoor-jungle.herokuapp.com/)
 - [Staging](https://indoor-jungle-staging.herokuapp.com)
 
