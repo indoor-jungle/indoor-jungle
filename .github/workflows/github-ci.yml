@@ -1,0 +1,21 @@
+name: Indoor Jungle CI
+on: push
+
+jobs:
+  linters:
+    name: rubocop
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+      - run: gem install rubocop
+      - run: rubocop
+
+  bundle-audit:
+    name: vulnerabilities
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+      - run: bundle install
+      - run: bundle-audit check --update
