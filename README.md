@@ -1,7 +1,6 @@
 # Indoor Jungle
 
 ## Local Development
-
 You can install the required dependencies, prepare the database and remove old
 logs and tempfiles with:
 ```
@@ -28,6 +27,12 @@ in `.rubocop.yml`.
 ```bash
 bundle exec rubocop  # Lint Ruby code
 ```
+
+## Environment
+[Heroku](http://heroku.com/) is being used to host the application. 
+`main` and `staging` branches are automatically deployed to relative urls:
+- [Production](https://indoor-jungle.herokuapp.com/)
+- [Staging](https://indoor-jungle-staging.herokuapp.com)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE)
